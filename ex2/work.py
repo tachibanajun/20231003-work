@@ -2,6 +2,19 @@ from math import ceil
 
 def calc_account(m):
     # 実装は入れていません、自分で入れてください
+    if m < 1:
+        return None
+    else:
+        sum = 610
+        m -= 1700
+        if m <= 0:
+            return sum
+        else:
+            while m > 0:
+                m -= 315
+                sum += 80
+            
+            return sum
     pass
 
 if __name__ == "__main__":
